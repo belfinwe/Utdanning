@@ -1,0 +1,28 @@
+# Oppgave 2, kapittel 3, side 133.
+
+# Skriv inn lengde og bredde på firkant 1
+# Skriv inn lengde og bredde på firkant 2
+
+# Beregn areal av firkantene
+
+# Sammenlign arealene av firkantene
+
+# Skriv ut hvilken som har størts areal, eller om de har det samme
+
+##############################
+
+firkant1_b = float(input('Bredde firkant 1: '))
+firkant1_l = float(input('Lengde firkant 1: '))
+firkant2_b = float(input('Bredde firkant 2: '))
+firkant2_l = float(input('Lengde firkant 2: '))
+
+areal_f1 = firkant1_b * firkant1_l
+areal_f2 = firkant2_b * firkant2_l
+
+if areal_f1 == areal_f2:
+    print('Arealene til de to firkantene er like store!')
+else:
+    if areal_f1 > areal_f2:
+        print('Arealet til firkant 1 er større enn firkant 2!')
+    else:
+        print('Arealet til firkant 2 er større enn firkant 1!')
