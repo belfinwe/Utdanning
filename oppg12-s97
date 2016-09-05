@@ -1,0 +1,53 @@
+# Oppgave 12 side 97.
+
+#Programkart
+# Programstart /E
+
+# Les inn antall kjøpte aksjer og pris pr aksje (i kroner). /P
+
+# Beregn totalt kjøpt for, og andelen megleren skal ha (3%) /R
+
+# Les inn antall solgte aksjer og pris pr aksje (i kroner) /P
+
+# Beregn totalt solgt for, og andelen megleren skal ha (3%) /R
+
+# Beregn om Joe har tjent eller tapt penger, etter at megler har fått sitt /R
+
+# Skriv ut resultatet, om Joe har tjent eller tapt /P
+
+# Programslutt /E
+
+########################################################################
+
+#Les inn kjøpt /P
+antall_aksjer_buy = float(input('Skriv inn antall kjøpte aksjer: ')) 
+pris_pr_aksje = float(input('Skriv inn pris pr aksje: '))
+
+
+#Beregn kjøpt /R
+totpris_stock_buy = (antall_aksjer_buy * pris_pr_aksje) # Hvor mye Joe kjøpte for.
+
+broker_buy = (totpris_stock_buy / 100) * 3 # Til megleren ved kjøp
+
+
+# Les inn solgt /P
+antall_aksjer_solgt = float(input('Skriv inn antall solgte aksjer: '))
+pris_pr_solgte_aksje = float(input('Skriv inn antall solgte aksjer: '))
+
+
+# Beregn solgt /R
+totpris_stock_sell = antall_aksjer_solgt * pris_pr_solgte_aksje # Hvor mye Joe solgte for.
+broker_solgt = (totpris_stock_sell / 100) * 3 # Til megleren ved salg
+
+
+#Hvor mye Joe har etter at megler har fått sitt /R
+overskudd_buy = totpris_stock_buy + broker_buy # Det Joe brukte på kjøpt av aksjer og betale megler.
+overskudd_solgt = totpris_stock_sell - broker_solgt # Det Joe sitter igjen med etter salg av aksjer minus betale megler.
+
+tot_overskudd = overskudd_solgt - overskudd_buy # Tar det Joe solgte for(min meglerutfigter) og trekker ifra hva Joe kjøpte for(pluss utgift til megler)
+
+
+# Skriv ut resultatet, om Joe har tjent eller tapt penger /P
+print('\nJoe sitter igjen med:', format(float(tot_overskudd), '.2f'), 'kroner.')
+
+########################################################################
