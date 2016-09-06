@@ -1,0 +1,11 @@
+# Oppgavesett 1, oppgave 4.
+
+tall_1 = float(input('Skriv inn tall 1: '))
+tall_2 = float(input('Skriv inn tall 2: '))
+tall_3 = float(input('Skriv inn tall 3: '))
+tall_4 = float(input('Skriv inn tall 4: '))
+tall_5 = float(input('Skriv inn tall 5: '))
+
+laveste_tall = min(tall_1, tall_2, tall_3, tall_4, tall_5)
+
+print('Det laveste tallet er:', laveste_tall)
