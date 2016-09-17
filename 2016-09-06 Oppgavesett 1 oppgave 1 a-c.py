@@ -1,0 +1,69 @@
+# Oppgavesett 1, oppgave 1 a)-c)
+print('Oppgavesett 1, oppgave 1 a) - c).\n')
+
+deltakere = float(input('Skriv inn antall deltakere på paintball: '))
+tillegg = 0
+if deltakere <= 9:
+    tillegg = 420
+
+elif deltakere >= 10:
+    if deltakere >= 20:
+        if deltakere >= 31:
+            print('Maks antall deltakere er 30. Bestilling avbrutt.\n')
+        else:
+            tillegg = 350
+    else:
+        tillegg = 380
+
+baneleie = 2500
+
+tot_pris = (deltakere * tillegg) + baneleie
+
+print('Total pris blir:', tot_pris)
+print('Antall deltakere er:', deltakere,'\nPris for hver deltaker er:', tillegg)
+print('Total pris for deltakerne er da:', (deltakere * tillegg))
+print('Baneleie blir:', baneleie)
+
+print('\n', '\n')
+
+# Oppgavesett 1, oppgave 1 d)
+
+print('Oppgavesett 1, oppgave 1 d).\n')
+
+deltakere_d = float(input('Skriv inn antall deltakere på paintball: '))
+tillegg_d = 0
+baneleie_d = 0
+
+if deltakere_d <= 9:
+    tillegg_d = 350
+    baneleie_d = 3500
+
+elif deltakere_d >= 10:
+    if deltakere_d >= 20:
+        if deltakere_d >= 31:
+            print('Maks antall deltakere er 30. Bestilling avbrutt.\n')
+        else:
+            tillegg_d = 450
+            baneleie_d = 1000
+    else:
+        tillegg_d = 400
+        baneleie_d = 2000
+
+
+tot_pris_d = (deltakere_d * tillegg_d) + baneleie_d
+
+print('Total pris blir:', tot_pris_d)
+print('Antall deltakere er:', deltakere_d,'\nPris for hver deltaker er:', tillegg_d)
+print('Total pris for deltakerne er da:', (deltakere_d * tillegg_d))
+print('Baneleie:', baneleie_d)
+
+print('\n', '\n')
+
+print('Så var det forskjellen i pris mellom a) - c) og d):')
+print('I a) - c) blir totalprisen:', tot_pris, '\nog i d) blir totalprisen:', tot_pris_d)
+
+if tot_pris >= tot_pris_d:
+    print('Det er den første prisstrategien som er mest gunstig for firmaet.')
+else:
+    print('Det er den nye prisstrategien som er mest gunstig for firmaet.')
+
